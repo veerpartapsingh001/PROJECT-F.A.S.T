@@ -1,0 +1,73 @@
+.nav {
+    display: flex;
+    text-align: center;
+    background-color: rgb(50, 109, 148);
+    justify-content: space-between;
+    list-style: none;
+}
+
+.center {
+    margin-top: 30px;
+}
+
+.center_left {
+    margin-top: 30px;
+    padding-right: 12px;
+}
+
+.center_right {
+    margin-top: 30px;
+    padding-left: 12px;
+}
+
+.mainScreen {
+    display: flex;
+}
+
+#gdiv {
+    background-color: aliceblue;
+    width: 75%;
+}
+
+#gdiv, form {}
+
+#rdiv {
+    background-color: rgb(133, 133, 202);
+    width: 25%;
+}
+
+.choices {
+    display: flex;
+    background-color: aquamarine;
+    justify-content: space-around;
+}
+
+.btn{
+    margin: 12px;
+	box-shadow: 5px 5px 5px -1px #08baf5;
+	background-color:#ffffff;
+	border-radius:15px;
+	border:3px solid #babad4;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-weight:bold;
+	padding:12px;
+	text-decoration:none;
+    text-align: center;
+    width: 100px;
+
+}
+
+.btn:hover {
+	background-color:#bab1ba;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+.choicesPicked{
+    background-color: #b53db5;
+
+}
