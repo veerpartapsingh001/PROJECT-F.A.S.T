@@ -1,10 +1,15 @@
-let player = {
-    name : "Player", //name of player
-    choices : [] //choices that will happen
-}
+// var player = {
+//     name : "Player", //name of player
+//     choices : [] //choices that will happen
+// }
+
+// var getPlayerName = prompt("Type in a name and check console.")
+// console.log(getPlayerName);
+
+var arrayChoices = ["intro"];
 
 //area object
-let area = {
+var area = {
     intro: {
         text: "Let's start from the beginning " + player.name, //textArea
         mod: [
@@ -28,9 +33,9 @@ let area = {
 };
 
 //variables
-let nextArea = area.area;
-let buttonPick = document.getElementById("buttonPick");
-let nameGate = false;
+var nextArea = area.area;
+var buttonPick = document.getElementById("buttonPick");
+var nameGate = false;
 
 function swithchArea(place) {
     nextArea = place;
@@ -38,7 +43,7 @@ function swithchArea(place) {
 
 //areas
 function construct(place) {
-    let message = '<p name="nameInput"> </p><p>' + place.text + '</p>'
+    let message = '<p name="nameInput"> </p> <p>' + place.text + '</p>'
     for (i = 0; i < place.options.length; i++) {
         message += '<button type="submit" onclick="swithchArea(' + place.options[i][1] + ')">' + place.options[i][0] + '</button>'
     }
@@ -50,7 +55,6 @@ function construct(place) {
 return message;
 }
 
-
 //allows site to run
 let gameSite = document.getElementById('game'),
     gameOutput = gameSite.elements;
@@ -58,8 +62,7 @@ let gameSite = document.getElementById('game'),
 console.log(gameOutput);
 
 //output
-function gameOutput(event) {
-
+function gameOutputs(event) {
 //gives name 
 if (nameGate == false) {
     let textName = gameData['nameInput'].value;
