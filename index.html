@@ -18,11 +18,11 @@
       </div>
 
       <div>
-        <h1>Project Fast</h1>
+        <h1>Project F.A.S.T</h1>
       </div>
 
       <div class="center_left">
-        <a href="credits.html"><button>CREDITS:</button></a>
+        <a href="credits.html"><button class="btn">CREDITS:</button></a>
       </div>
     </header>
 
@@ -30,32 +30,113 @@
       <div id="gdiv">
         <form id="game">
           <div class="text1" id="output">
+            <p id="formErrorMessages"></p>
             <input
               type="text"
               name="nameInput"
               id="playerNameChoice"
               placeholder="What is your name?"
             />
+            <br>
+            <br>
+            <input
+              type="number"
+              name="heightInput"
+              step="any"
+              placeholder="Your Height? (#'. #'')?"
+            />
+            <br>
+            <br>
+            <input
+              type="number"
+              name="heightInput"
+              step="any"
+              placeholder="Whats is your SSN?"
+            />
+            <br>
+            <br>
+            <form action="/action_page.php">
+              <label for="cars">Choose Hair color:</label>
+              <select >
+                <option>Black</option>
+                <option >Red</option>
+                <option >Brown</option>
+                <option >Blonde</option>
+              </select>
+<br>
+<br>
+<form >
+  <label for="cars">Choose Eye color:</label>
+  <select >
+    <option>Black</option>
+    <option >Red</option>
+    <option >Brown</option>
+    <option >Green</option>
+  </select>
+            <br>
+            <br>
+            <form >
+              <label for="cars">Choose ethnicity</label>
+              <select class="form-control dropdown" id="ethnicity" name="ethnicity">
+                <option value="" selected="selected" disabled="disabled">-- select one --</option>
+                <optgroup label="White">
+                  <option >English</option>
+                  <option >Welsh</option>
+                  <option >Scottish</option>
+                  <option >Northern Irish</option>
+                  <option >Irish</option>
+                  <option >Gypsy or Irish Traveller</option>
+                  <option >Any other White background</option>
+                </optgroup>
+                <optgroup label="Mixed or Multiple ethnic groups">
+                  <option >White and Black Caribbean</option>
+                  <option >White and Black African</option>
+                  <option >Any other Mixed or Multiple background</option>
+                </optgroup>
+                <optgroup label="Asian">
+                  <option >Indian</option>
+                  <option >Pakistani</option>
+                  <option >Bangladeshi</option>
+                  <option >Chinese</option>
+                  <option >Any other Asian background</option>
+                </optgroup>
+                <optgroup label="Black">
+                  <option >African</option>
+                  <option >African American</option>
+                  <option >Caribbean</option>
+                  <option >Any other Black background</option>
+                </optgroup>
+                <optgroup label="Other ethnic groups">
+                  <option >Arab</option>
+                  <option >Hispanic</option>
+                  <option >Latino</option>
+                  <option >Native American</option>
+                  <option >Pacific Islander</option>
+                  <option >Any other ethnic group</option>
+                </optgroup>
+              </select>
+              <br>
+              <br>
             <button type="submit">enter</button>
           </div>
         </form>
       </div>
 
       <div id="rdiv">
-        <h1>hehe</h1>
-        <img src="https://via.placeholder.com/150" alt="" />
+        <img src="https://c.tenor.com/ooA2pOKHpqYAAAAS/gojo-pose.gif" alt="" />
       </div>
     </section>
 
     <section id="choicesID" class="choices">
+      <!-- <button class="btn"></button>
       <button class="btn"></button>
       <button class="btn"></button>
-      <button class="btn"></button>
-      <button class="btn"></button>
+      <button class="btn"></button> -->
     </section>
 
     <section id="" class="choicesPicked">
-      <h1>heheh</h1>
+      <h1>Your Choices:</h1>
+      <h1 id="choicesPickedDisplay">Choices will end up here.</h1>
     </section>
     <!-- <script src="fast.js"></script> -->
     <script src="javaScript.js"></script>

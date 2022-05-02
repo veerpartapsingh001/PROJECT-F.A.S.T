@@ -1,50 +1,61 @@
-// var player = {
-//     name : "Player", //name of player
-//     choices : [] //choices that will happen
-// }
+var playerObject = {
+    name: "Player",
+    height: "Height"
+}
 
 var form = document.getElementById("game");
-var textOut = document.getElementById("output");
-var nameData = form.elements;
-var userName = nameData["nameInput"].value;
+var nameData = form.elements;   
+var textOut = document.getElementById("output"); 
+// var userName = nameData["nameInput"].value;
+// var userHeight = nameData["heightInput"].value;
 
 function formFunction(a) {
-nameData = form.elements;
-userName = nameData["nameInput"].value;
-textOut.innerHTML = "Your name is, " + userName + " ";
+let playerInformation = "";
+// nameData = form.elements;
+let playerNameFocus = document.getElementById("playerNameChoice");
+let errorMessageOutput = document.getElementById("formErrorMessages"); 
+let userName = nameData["nameInput"].value;
+let userHeight = nameData["heightInput"].value;
+playerObject.height = userHeight;
+// console.log(playerObject.height); Testing values
+playerObject.name = userName;
+if (userName == "") {
+    // alert("Invalid name choice, please put in a correct name!"); Optional error message alert
+    a.preventDefault();
+    errorMessageOutput.innerHTML = "Name can't be empty!"
+    return playerNameFocus.focus();
+}
+// console.log(playerObject.name); Testing values
+// playerInformation += "Your height is " + playerObject.height + " & your name is " + playerObject.name + " "
+playerInformation += '<p class="jsDisplayInformationTag"> Your height is ' + playerObject.height + " & your name is " + playerObject.name + "</p>";
 
-a.preventDefault();
+textOut.innerHTML = playerInformation;
 
 let formContinueButton = document.createElement("button")
-formContinueButton.innerHTML = "Ready to play? " + userName;
+formContinueButton.innerHTML = "Ready to play? " + playerObject.name;
 textOut.appendChild(formContinueButton);
 
 formContinueButton.addEventListener("click", function() {
     construct();
-})
+});
 
+a.preventDefault();
 }
 
 form.addEventListener('submit', formFunction);
 
+
 var arrayChoices = ["intro"];
 
-
-var playerObj = {
-    name: userName,
-}
-
-console.log(playerObj.);
-// area object
 var area = {
 
     intro: {
-        text: "Let's start from the beginning " + playerObj.name, //textArea
+        text: "Let's start from the beginning " + playerObject.name, //textArea
         // mod: [
         //     []
         // ],
         options: [
-            ["Okay, tell me about boot camp", "area1"], ["Okay", "area1 "]
+            ["Okay, tell me about boot camp", "area1"], ["Okay", "area1"]
         ]
     },
 
@@ -54,12 +65,11 @@ var area = {
         //     []
         // ],
         choices: [
-            ["Continue", "area.area2"]
+            ["Continue", "area2"]
         ]
     }
 
 };
-
 
 
 function constructerButtons(buttonText, picked) {
@@ -74,10 +84,18 @@ function constructerButtons(buttonText, picked) {
 
 
 function constructerText(text) {
-    textOut.innerHTML = text;
+    let messageTextBinding = '<p name="nameInput"> </p><p>' + text + '</p>'
+    for (i = 0; i < messageTextBinding.length - 6; i++) {
+        if(messageTextBinding.substring(i, i + 6) == "Player"){
+            messageTextBinding = messageTextBinding.replace("Player", playerObject.name);
+            console.log(messageTextBinding);
+        }
+        textOut.innerHTML = messageTextBinding;
+      }
 }
 
 function construct() { 
+    let choicerFormat = ""
     textOut.innerHTML = "";
     choicesID.innerHTML = "";
 
@@ -86,56 +104,12 @@ function construct() {
       console.log(i);
     }
 
+    for(let a of arrayChoices) {
+        choicerFormat += a + ", ";
+        document.getElementById("choicesPickedDisplay").innerHTML = choicerFormat;
+    }
+
     for (let optioner of area[arrayChoices[arrayChoices.length - 1]].options) {
         constructerButtons(optioner[0], optioner[1]);
-      console.log(optioner);
-
+    }
 }
-}
-
-//variables
-// var nextArea = area.area;
-// var buttonPick = document.getElementById("buttonPick");
-// var nameGate = false;
-
-// function swithchArea(place) {
-//     nextArea = place;
-// }
-
-// //areas
-// function construct(place) {
-//     let message = '<p name="nameInput"> </p> <p>' + place.text + '</p>'
-//     for (i = 0; i < place.options.length; i++) {
-//         message += '<button type="submit" onclick="swithchArea(' + place.options[i][1] + ')">' + place.options[i][0] + '</button>'
-//     }
-//     for (i=0; i < message.length-6; i++) {
-//         if(message.substring(i, i+6) == "Player"){
-//             message = message.replace("Player", player.name);
-//     }
-//   }
-// return message;
-// }
-
-// //allows site to run
-// let gameSite = document.getElementById('game'),
-//     gameOutput = gameSite.elements;
-
-// console.log(gameOutput);
-
-// //output
-// function gameOutputs(event) {
-// //gives name 
-// if (nameGate == false) {
-//     let textName = gameData['nameInput'].value;
-//     let output = document.getElementById('output');
-//     player.name = textName;
-//     nameGate = true;
-// }
-
-// output.innerHTML = `${construction(nextArea)}`;
-// console.log(player);
-// event.preventDefault();
-// }
-
-// //run
-// gamePage.addEventListener(`submit`, gameOutput);

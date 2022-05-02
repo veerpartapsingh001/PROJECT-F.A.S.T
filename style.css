@@ -58,6 +58,7 @@ body{
     border: solid 4px #252523 ;
     border-left: 0px;
     border-right: 0px;
+    height: 420px;
 }
 /*main .mainScreen*/
 #gdiv {
@@ -66,7 +67,16 @@ body{
     padding: 10px;
 }
 
-#gdiv, form {}
+.text1{
+    margin: auto;
+    text-align: center;
+    flex: auto;
+    justify-content: center;
+}
+
+#formErrorMessages {
+    color: red;
+}
 
 #rdiv {
     background-color: rgb(133, 133, 202);
@@ -87,7 +97,7 @@ body{
     align-items: center;
     border-top: solid 0px #252523;
     border-bottom: solid 5px #252523;
-    position: absolute;
+ 
     width: 100%;
 }
 
@@ -119,8 +129,12 @@ body{
 .choicesPicked{
     background-color: #595959;
     width: 100%;
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0px;        
     border-top: solid 5px #252523;
     border-bottom: solid 5px #252523;
+}
+
+#choicesPickedDisplay {
+    color:white;
 }
