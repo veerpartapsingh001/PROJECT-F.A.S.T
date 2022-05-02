@@ -2,12 +2,13 @@
 body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
+    background-color: #252523;
 }
 
 .nav {
     display: flex;
     text-align: center;
-    background-color: rgb(50, 109, 148);
+    background-color: #595959;
     justify-content: space-between;
     list-style: none;
 }
@@ -34,10 +35,12 @@ body{
 
 .center_right span{
     font-size: 42px;
+    color: #66C2FF;
 }
 
 .center_right span:hover{
     animation: refreshRotate 1s ease-in-out infinite;
+    color: #D8282D ;
 }
 
 @keyframes refreshRotate{
@@ -52,13 +55,15 @@ body{
 .mainScreen {
     display: flex;
     justify-content: space-between;
-    border: solid 4px red ;
+    border: solid 4px #252523 ;
+    border-left: 0px;
+    border-right: 0px;
 }
 /*main .mainScreen*/
 #gdiv {
     background-color: aliceblue;
     width: 75%;
-    border: solid 10px orange;
+    padding: 10px;
 }
 
 #gdiv, form {}
@@ -71,21 +76,25 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    border-left: solid 5px  #252523;;
 }
 
 .choices {
     height: 100px;
     display: flex;
-    background-color: aquamarine;
+    background-color: #595959;
     justify-content: space-around;
     align-items: center;
-    border: solid 5px red;
+    border-top: solid 0px #252523;
+    border-bottom: solid 5px #252523;
+    position: absolute;
+    width: 100%;
 }
 
 .btn{
     /* margin: 12px; */
-	box-shadow: 5px 5px 5px -1px #08baf5;
-	background-color:#ffffff;
+	box-shadow: 5px 5px 5px -1px #595959;
+	background-color:#66C2FF;
 	border-radius:15px;
 	border:3px solid #babad4;   
 	display:inline-block;
@@ -99,7 +108,8 @@ body{
 }
 
 .btn:hover {
-	background-color:#bab1ba;
+	background-color:#D8282D;
+    
 }
 /* .btn:active {
 	position:relative;
@@ -107,10 +117,10 @@ body{
 } */
 
 .choicesPicked{
-    background-color: #b53db5;
+    background-color: #595959;
     width: 100%;
-    height: 100px;
     position: absolute;
-    bottom: 0px;
+    bottom: 0px;        
+    border-top: solid 5px #252523;
+    border-bottom: solid 5px #252523;
 }
-
