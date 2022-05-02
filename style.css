@@ -97,7 +97,7 @@ body{
     align-items: center;
     border-top: solid 0px #252523;
     border-bottom: solid 5px #252523;
- 
+
     width: 100%;
 }
 
@@ -115,6 +115,18 @@ body{
 	text-decoration:none;
     text-align: center;
     width: 100px;
+    animation: appear 0.5s ease-in-out;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        bottom:-100px;
+    }
+    to {
+        opacity: 1;
+        bottom: 0p;
+    }
 }
 
 .btn:hover {
