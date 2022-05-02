@@ -33,6 +33,8 @@ var arrayChoices = ["intro"];
 var playerObj = {
     name: userName,
 }
+
+console.log(playerObj.);
 // area object
 var area = {
 
