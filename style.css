@@ -127,7 +127,7 @@ img {
 .btn{
     /* margin: 12px; */
 	box-shadow: 5px 5px 5px -1px #595959;
-	background-color:#66C2FF;
+	/* background-color:#66C2FF; */
 	border-radius:15px;
 	border:3px solid #babad4;   
 	display:inline-block;
@@ -165,10 +165,12 @@ img {
 
 
 
-.btn:hover {
+/* .btn:hover {
 	background-color:#D8282D;
     
 }
+*/
+
 /* .btn:active {
 	position:relative;
 	top:1px;
