@@ -60,6 +60,24 @@ body{
     border-right: 0px;
     height: 420px;
 }
+
+#gdiv{
+    /* background-color:#CCC; */		
+    overflow-y:auto;
+    float:left;
+    position:relative;
+    margin-left:-5px;
+}
+#gdiv{
+width:215px;
+float:left;
+padding:0 0 0 5px;
+position:relative;
+float:left;
+border-right: 1px #f8f7f3 solid;
+/* background-image:url(images/bubble.png); */
+/* background-color: black; */
+}
 /*main .mainScreen*/
 #gdiv {
     background-color: aliceblue;
