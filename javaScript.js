@@ -84,7 +84,7 @@ function constructerButtons(buttonText, picked) {
 
 
 function constructerText(text) {
-    let messageTextBinding = '<p name="nameInput"> </p><p>' + text + '</p>'
+    let messageTextBinding = '<p name="nameInput"> </p><p class="appearingText">' + text + '</p>'
     for (i = 0; i < messageTextBinding.length - 6; i++) {
         if(messageTextBinding.substring(i, i + 6) == "Player"){
             messageTextBinding = messageTextBinding.replace("Player", playerObject.name);

@@ -121,13 +121,26 @@ body{
 @keyframes appear {
     from {
         opacity: 0;
-        bottom:-100px;
     }
     to {
         opacity: 1;
-        bottom: 0p;
     }
 }
+
+.appearingText {
+    animation: textappear 0.5s ease-in-out;
+}
+
+@keyframes textappear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 
 .btn:hover {
 	background-color:#D8282D;
