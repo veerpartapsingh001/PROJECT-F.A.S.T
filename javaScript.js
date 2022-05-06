@@ -59,17 +59,122 @@ var area = {
         "Drill Sergeant : “Shut up back there, we\’re almost there to Fort Jackson.”" + "<br><br>" +
         "*silence*" + "<br><br>" +
         "You get a tap on your shoulder" + "<br><br>" +
-        "Recruit next to you : “Hey, where are you from? You don’t seem to be from around here that’s for sure.\”" , 
+        "Recruit next to you : “Hey, where are you from? You don\’t seem to be from around here that’s for sure.\”" , 
         // mod: [
         //     []
         // ],
         options: [
-            ["Okay, tell me about boot camp", "area1"], ["Okay", "area1"],['Lets go','area2']
+            ["I\’m just from a small quiet town from Wyoming, lots of game out there that\’s for sure.", "CHOICE1"], ["My family used to be in California, then the bombs dropped. From there, we just moved around a bit until we ended up in Colorado", "CHOICE2"],['I\’m from New York, all the way up in Manhattan. I\’ve been loving city life ever since. I kinda miss it to be honest.','CHOICE3']
         ]
     },
 
-    area1: {
-        text: "hey!",
+    CHOICE1: {
+        text: "I\’m just from a small quiet town from Wyoming, lots of game out there that\’s for sure." + "<br><br>" +
+       " \"Recruit : \"You\’re a long way from home. Don’t worry, me too.\" " + "<br><br>" +
+       " You : \"I wonder how my folks at home are doing. I just don’t want them to worry too much.\" " + "<br><br>" +
+       " Recruit : \"Yeah I feel you. Anyways, what do you plan to do?\" " + "<br><br>" +
+       " You : \"Oh I plan to do infantry and see where that takes me.\"  " + "<br><br>" +
+       " Recruit : \"No special forces? I think I plan to join the infantry too! I at least know after my contract, I am gonna go back home and join the police force there.\" "+ "<br><br>" +
+       " You : \"Well, best of luck with that.\"" +"<br><br>" +
+       " Recruit : \"Thanks.\""+ "<br><br>" +
+       " *Time skip 10 weeks* " + "<br><br>" +
+       "   **Army Technical School of Infantry** "+ "<br><br>" +
+       " Unit commander: Welcome Everyone and congratulations on graduating Boot Camp, Your hard work has paid off and now It's about to get much harder. You young men and women are about to start the 11B tech school in 4 weeks you will be given the Job Title of Infantryman with the MOS Code: 11B. These are your Drill Sergeants: Drill Sergeant Rodriguez and Drill Sergeant Silva they will make you the infantry America needs now."+ "<br><br>" +
+       " **TAP ON THE SHOULDER FROM BEHIND**" + "<br><br>" +
+       " Recruit : Hey remember me "+ "<br><br>" +
+       " You : oh wow what are the chances we are in the same unit"+ "<br><br>" +
+       " Recruit: yeah "+ "<br><br>" +
+       " **laugh together**"+ "<br><br>" +
+       " Drill Sergeant Silva : !! Hey you two … FRONT LEANING REST POSITION!! "+ "<br><br>" +
+       " Recruit & You : yes ma’am "+ "<br><br>" +
+       " YOU AND THE RECRUIT DOES AS MANY PUSHUPS AS SERGEANT SILVA COMMANDS"+ "<br><br>" +
+       " ** go back to barracks ** "+ "<br><br>" +
+       " Recruit : So you know what unit you're going to be in? And where?"+ "<br><br>" +
+       " You: yeah imma going to Rzeszow military base in southeastern Poland, near the poland and ukrainian border. You're asking a lot of questions but you're not Russian are you?"+ "<br><br>" +
+       " Recruit: NO! "+ "<br><br>" +
+       " Drill Sergeant Rodriguez: what with all that noise over there Get to sleep"+ "<br><br>" +
+       " **waking up to Drill Sergeant Rodriguez screaming at yout**"+ "<br><br>" +
+       "  Drill Sergeant Rodriguez: 0400 oh four hundred!!! is the time to wake up and get out of bed !!!!!!!"+ "<br><br>" +
+       " Time for PT!"+ "<br><br>" +
+       " **Recruit find out his mom and dads died and has to go home**"+ "<br><br>" +
+       " Time skip 4 weeks "+ "<br><br>" +
+       " Graduation Speech : GOOD MORNING LADIES AND GENTLEMEN! THANK YOU FOR ATTENDING THE GRADUATION CEREMONY FOR ALPHA COMPANY, 2 ND BATTALION 58 TH INFANTRY REGIMENT; AND CHARLIE COMPANY, 2 ND BATTALION 19 TH INFANTRY "+ "<br><br>" +
+       " … "+ "<br><br>" +
+       " **TAP ON THE SHOULDER FROM BEHIND**"+ "<br><br>" +
+       " Recruit: Hey man we meet again"+ "<br><br>" +
+       "You: oh wow how did you graduated did you go home"+ "<br><br>" +
+       "Recruit: yeah but I came back and joined the 19 TH INFANTRY BATTALION and finish my training"+ "<br><br>" +
+       "You nice man good to hear "+ "<br><br>" +
+       "…"+ "<br><br>" +
+       "MAY GOD BLESS AND PROTECT EACH AND EVERY ONE OF YOU...THANK YOU VERY MUCH"+ "<br><br>" +
+       ".."+ "<br><br>" +
+       + "<br><br>" +
+       " *** "+ "<br><br>" +
+       " Are you still interested in joining the special forces like you said at BMT?"+ "<br><br>" +
+       "Yeah "+ "<br><br>" +
+       "You ready for the Special forces test?"+ "<br><br>" +
+       "Mhm I'm not the same as 14 weeks ago I feel stronger mentaly and physically?"+ "<br><br>" +
+       "Good cause I hear the Rangers, Green Berets, and the Delta Forces are starting these Tests next week "+ "<br><br>" +
+       "Yeah I Heard, You going to try?"+ "<br><br>" +
+       "Yeah Imma try"+ "<br><br>" +
+       "**next week **"+ "<br><br>" ,
+        // mod: [
+        //     []
+        // ],
+        choices: [
+            ["RANGER", "Ranger"],["GREEN BERETS", "Greenberets"],["DELTA FORCE", "Deltaforce"]
+        ]
+    },
+    CHOICE2: {
+        text: "My family used to be in California, then the bombs dropped. From there, we just moved around a bit until we ended up in Colorado"+ "<br><br>" +
+        " \"Recruit : \"You\’re a long way from home. Don’t worry, me too.\" " + "<br><br>" +
+        " You : \"I wonder how my folks at home are doing. I just don’t want them to worry too much.\" " + "<br><br>" +
+        " Recruit : \"Yeah I feel you. Anyways, what do you plan to do?\" " + "<br><br>" +
+        " You : \"Oh I plan to do infantry and see where that takes me.\"  " + "<br><br>" +
+        " Recruit : \"No special forces? I think I plan to join the infantry too! I at least know after my contract, I am gonna go back home and join the police force there.\" "+ "<br><br>" +
+        " You : \"Well, best of luck with that.\"" +"<br><br>" +
+        " Recruit : \"Thanks.\""+ "<br><br>" +
+        " *Time skip 10 weeks* " + "<br><br>" +
+        "   **Army Technical School of Infantry** "+ "<br><br>" +
+        " Unit commander: Welcome Everyone and congratulations on graduating Boot Camp, Your hard work has paid off and now It's about to get much harder. You young men and women are about to start the 11B tech school in 4 weeks you will be given the Job Title of Infantryman with the MOS Code: 11B. These are your Drill Sergeants: Drill Sergeant Rodriguez and Drill Sergeant Silva they will make you the infantry America needs now."+ "<br><br>" +
+        " **TAP ON THE SHOULDER FROM BEHIND**" + "<br><br>" +
+        " Recruit : Hey remember me "+ "<br><br>" +
+        " You : oh wow what are the chances we are in the same unit"+ "<br><br>" +
+        " Recruit: yeah "+ "<br><br>" +
+        " **laugh together**"+ "<br><br>" +
+        " Drill Sergeant Silva : !! Hey you two … FRONT LEANING REST POSITION!! "+ "<br><br>" +
+        " Recruit & You : yes ma’am "+ "<br><br>" +
+        " YOU AND THE RECRUIT DOES AS MANY PUSHUPS AS SERGEANT SILVA COMMANDS"+ "<br><br>" +
+        " ** go back to barracks ** "+ "<br><br>" +
+        " Recruit : So you know what unit you're going to be in? And where?"+ "<br><br>" +
+        " You: yeah imma going to Rzeszow military base in southeastern Poland, near the poland and ukrainian border. You're asking a lot of questions but you're not Russian are you?"+ "<br><br>" +
+        " Recruit: NO! "+ "<br><br>" +
+        " Drill Sergeant Rodriguez: what with all that noise over there Get to sleep"+ "<br><br>" +
+        " **waking up to Drill Sergeant Rodriguez screaming at yout**"+ "<br><br>" +
+        "  Drill Sergeant Rodriguez: 0400 oh four hundred!!! is the time to wake up and get out of bed !!!!!!!"+ "<br><br>" +
+        " Time for PT!"+ "<br><br>" +
+        " **Recruit find out his mom and dads died and has to go home**"+ "<br><br>" +
+        " Time skip 4 weeks "+ "<br><br>" +
+        " Graduation Speech : GOOD MORNING LADIES AND GENTLEMEN! THANK YOU FOR ATTENDING THE GRADUATION CEREMONY FOR ALPHA COMPANY, 2 ND BATTALION 58 TH INFANTRY REGIMENT; AND CHARLIE COMPANY, 2 ND BATTALION 19 TH INFANTRY "+ "<br><br>" +
+        " … "+ "<br><br>" +
+        " **TAP ON THE SHOULDER FROM BEHIND**"+ "<br><br>" +
+        " Recruit: Hey man we meet again"+ "<br><br>" +
+        "You: oh wow how did you graduated did you go home"+ "<br><br>" +
+        "Recruit: yeah but I came back and joined the 19 TH INFANTRY BATTALION and finish my training"+ "<br><br>" +
+        "You nice man good to hear "+ "<br><br>" +
+        "…"+ "<br><br>" +
+        "MAY GOD BLESS AND PROTECT EACH AND EVERY ONE OF YOU...THANK YOU VERY MUCH"+ "<br><br>" +
+        ".."+ "<br><br>" +
+        + "<br><br>" +
+        " *** "+ "<br><br>" +
+        " Are you still interested in joining the special forces like you said at BMT?"+ "<br><br>" +
+        "Yeah "+ "<br><br>" +
+        "You ready for the Special forces test?"+ "<br><br>" +
+        "Mhm I'm not the same as 14 weeks ago I feel stronger mentaly and physically?"+ "<br><br>" +
+        "Good cause I hear the Rangers, Green Berets, and the Delta Forces are starting these Tests next week "+ "<br><br>" +
+        "Yeah I Heard, You going to try?"+ "<br><br>" +
+        "Yeah Imma try"+ "<br><br>" +
+        "**next week **"+ "<br><br>" ,
         // mod: [
         //     []
         // ],
@@ -77,16 +182,97 @@ var area = {
             ["Continue", "area2"]
         ]
     },
-    area2: {
-        text: "Lets go",
+    CHOICE3: {
+        text: "I\’m from New York, all the way up in Manhattan. I\’ve been loving city life ever since. I kinda miss it to be honest."+ "<br><br>" +
+        " \"Recruit : \"You\’re a long way from home. Don’t worry, me too.\" " + "<br><br>" +
+        " You : \"I wonder how my folks at home are doing. I just don’t want them to worry too much.\" " + "<br><br>" +
+        " Recruit : \"Yeah I feel you. Anyways, what do you plan to do?\" " + "<br><br>" +
+        " You : \"Oh I plan to do infantry and see where that takes me.\"  " + "<br><br>" +
+        " Recruit : \"No special forces? I think I plan to join the infantry too! I at least know after my contract, I am gonna go back home and join the police force there.\" "+ "<br><br>" +
+        " You : \"Well, best of luck with that.\"" +"<br><br>" +
+        " Recruit : \"Thanks.\""+ "<br><br>" +
+        " *Time skip 10 weeks* " + "<br><br>" +
+        "   **Army Technical School of Infantry** "+ "<br><br>" +
+        " Unit commander: Welcome Everyone and congratulations on graduating Boot Camp, Your hard work has paid off and now It's about to get much harder. You young men and women are about to start the 11B tech school in 4 weeks you will be given the Job Title of Infantryman with the MOS Code: 11B. These are your Drill Sergeants: Drill Sergeant Rodriguez and Drill Sergeant Silva they will make you the infantry America needs now."+ "<br><br>" +
+        " **TAP ON THE SHOULDER FROM BEHIND**" + "<br><br>" +
+        " Recruit : Hey remember me "+ "<br><br>" +
+        " You : oh wow what are the chances we are in the same unit"+ "<br><br>" +
+        " Recruit: yeah "+ "<br><br>" +
+        " **laugh together**"+ "<br><br>" +
+        " Drill Sergeant Silva : !! Hey you two … FRONT LEANING REST POSITION!! "+ "<br><br>" +
+        " Recruit & You : yes ma’am "+ "<br><br>" +
+        " YOU AND THE RECRUIT DOES AS MANY PUSHUPS AS SERGEANT SILVA COMMANDS"+ "<br><br>" +
+        " ** go back to barracks ** "+ "<br><br>" +
+        " Recruit : So you know what unit you're going to be in? And where?"+ "<br><br>" +
+        " You: yeah imma going to Rzeszow military base in southeastern Poland, near the poland and ukrainian border. You're asking a lot of questions but you're not Russian are you?"+ "<br><br>" +
+        " Recruit: NO! "+ "<br><br>" +
+        " Drill Sergeant Rodriguez: what with all that noise over there Get to sleep"+ "<br><br>" +
+        " **waking up to Drill Sergeant Rodriguez screaming at yout**"+ "<br><br>" +
+        "  Drill Sergeant Rodriguez: 0400 oh four hundred!!! is the time to wake up and get out of bed !!!!!!!"+ "<br><br>" +
+        " Time for PT!"+ "<br><br>" +
+        " **Recruit find out his mom and dads died and has to go home**"+ "<br><br>" +
+        " Time skip 4 weeks "+ "<br><br>" +
+        " Graduation Speech : GOOD MORNING LADIES AND GENTLEMEN! THANK YOU FOR ATTENDING THE GRADUATION CEREMONY FOR ALPHA COMPANY, 2 ND BATTALION 58 TH INFANTRY REGIMENT; AND CHARLIE COMPANY, 2 ND BATTALION 19 TH INFANTRY "+ "<br><br>" +
+        " … "+ "<br><br>" +
+        " **TAP ON THE SHOULDER FROM BEHIND**"+ "<br><br>" +
+        " Recruit: Hey man we meet again"+ "<br><br>" +
+        "You: oh wow how did you graduated did you go home"+ "<br><br>" +
+        "Recruit: yeah but I came back and joined the 19 TH INFANTRY BATTALION and finish my training"+ "<br><br>" +
+        "You nice man good to hear "+ "<br><br>" +
+        "…"+ "<br><br>" +
+        "MAY GOD BLESS AND PROTECT EACH AND EVERY ONE OF YOU...THANK YOU VERY MUCH"+ "<br><br>" +
+        ".."+ "<br><br>" +
+        + "<br><br>" +
+        " *** "+ "<br><br>" +
+        " Are you still interested in joining the special forces like you said at BMT?"+ "<br><br>" +
+        "Yeah "+ "<br><br>" +
+        "You ready for the Special forces test?"+ "<br><br>" +
+        "Mhm I'm not the same as 14 weeks ago I feel stronger mentaly and physically?"+ "<br><br>" +
+        "Good cause I hear the Rangers, Green Berets, and the Delta Forces are starting these Tests next week "+ "<br><br>" +
+        "Yeah I Heard, You going to try?"+ "<br><br>" +
+        "Yeah Imma try"+ "<br><br>" +
+        "**next week **"+ "<br><br>" ,
         // mod: [
         //     []
         // ],
         choices: [
-            ["Continue", "area2"]
+            ["Continue", "Ranger"]
         ]
     },
+    Ranger:{
+    text: "You spot your friend Phoenix with the rangers tab on his uniform." + "<br><br>" +
+    "You : \"Hey! You finished it!\"" + "<br><br>" +
+    "Phoenix : \"Yeah, I did! A lot of people dropped out after the \"Benning phase.\" "+ "<br><br>" +
+    "You : \"How did you do it? Can you help a brother out?\""+ "<br><br>" +
+    "Phoenix : \"Yeah of course, as long as you put in the effort and really want to do it.\""+ "<br><br>" +
+    "*You and Phoenix train together for the next Ranger selection*" + "<br><br>" ,
 
+// mod: [
+        //     []
+        // ],
+        choices: [
+            ["Continue", "Ranger"]
+        ]
+    },
+    Greenberets:{
+// mod: [
+        //     []
+        // ],
+        choices: [
+            ["Continue", "Ranger"]
+        ]
+    },
+    Deltaforce:{
+        // mod: [
+                //     []
+                // ],
+         choices: [
+                ["Continue", "Ranger"]
+        ]
+     },
+    
+//["RANGER", "Ranger"],
+//["GREEN BERETS", "Greenberets"],["DELTA FORCE", "Deltaforce"]
 };
 
 
