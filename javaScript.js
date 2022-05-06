@@ -179,7 +179,7 @@ var area = {
         //     []
         // ],
         choices: [
-            ["Continue", "area2"]
+            ["RANGER", "Ranger"],["GREEN BERETS", "Greenberets"],["DELTA FORCE", "Deltaforce"]
         ]
     },
     CHOICE3: {
@@ -236,7 +236,7 @@ var area = {
         //     []
         // ],
         choices: [
-            ["Continue", "Ranger"]
+            ["RANGER", "Ranger"],["GREEN BERETS", "Greenberets"],["DELTA FORCE", "Deltaforce"]
         ]
     },
     Ranger:{
@@ -245,34 +245,245 @@ var area = {
     "Phoenix : \"Yeah, I did! A lot of people dropped out after the \"Benning phase.\" "+ "<br><br>" +
     "You : \"How did you do it? Can you help a brother out?\""+ "<br><br>" +
     "Phoenix : \"Yeah of course, as long as you put in the effort and really want to do it.\""+ "<br><br>" +
-    "*You and Phoenix train together for the next Ranger selection*" + "<br><br>" ,
+    "*You and Phoenix train together for the next Ranger selection*" + "<br><br>" +
+    "*TIME SKIPS 2 YEARS LATER*" + "<br><br>" +
+    "You\’ve been training with Phoenix for the past two years. Doing strength, endurance and mental training." + "<br><br>" +
+     "But, as it gets closer to special forces selection, your relationship with Phoenix lowers. "+ "<br><br>" +
+     "The two of you start losing touch as soon as selection gets closer and closer. "+ "<br><br>" 
+    ,
 
 // mod: [
         //     []
         // ],
         choices: [
-            ["Continue", "Ranger"]
+            ["Continue", "Ranger2"]
         ]
     },
     Greenberets:{
+        text: "Phoenix : \"Well, the Green Berets are off the table\""+ "<br><br>" +
+        " You : \"No, we just need to be ready for it. Logically, there is no way a brand new private would be able to handle that training.\""+ "<br><br>" +
+        "Phoenix : \"Good point, well what do you want to do about it. Wait for two years. Heh.\""+ "<br><br>" +
+        "You : \"Yeah that’s exactly what I want to do. But I think we should train in the meantime. I feel like it would be the best thing to spend our time on.\"" + "<br><br>" +
+        " Phoenix : \"Sure. Let’s do that.\""+ "<br><br>" +
+        "*TIME SKIPS 2 YEARS LATER*" + "<br><br>" +
+    "You\’ve been training with Phoenix for the past two years. Doing strength, endurance and mental training." + "<br><br>" +
+     "But, as it gets closer to special forces selection, your relationship with Phoenix lowers. "+ "<br><br>" +
+     "The two of you start losing touch as soon as selection gets closer and closer. "+ "<br><br>" 
+    ,
+        
 // mod: [
         //     []
         // ],
         choices: [
-            ["Continue", "Ranger"]
+            ["Continue", "Greenberets2"]
         ]
     },
     Deltaforce:{
+        text: "Phoenix : \"Well, the Delta forces are off the table\""+ "<br><br>" +
+        " You : \"No, we just need to be ready for it. Logically, there is no way a brand new private would be able to handle that training.\""+ "<br><br>" +
+        "Phoenix : \"Good point, well what do you want to do about it. Wait for two years. Heh.\""+ "<br><br>" +
+        "You : \"Yeah that’s exactly what I want to do. But I think we should train in the meantime. I feel like it would be the best thing to spend our time on.\"" + "<br><br>" +
+        " Phoenix : \"Sure. Let’s do that.\""+ "<br><br>" +
+        "*TIME SKIPS 2 YEARS LATER*" + "<br><br>" +
+    "You\’ve been training with Phoenix for the past two years. Doing strength, endurance and mental training." + "<br><br>" +
+     "But, as it gets closer to special forces selection, your relationship with Phoenix lowers. "+ "<br><br>" +
+     "The two of you start losing touch as soon as selection gets closer and closer. "+ "<br><br>" 
+    ,
+        
         // mod: [
                 //     []
                 // ],
          choices: [
-                ["Continue", "Ranger"]
+                ["Continue", "Delta2"]
         ]
      },
-    
-//["RANGER", "Ranger"],
-//["GREEN BERETS", "Greenberets"],["DELTA FORCE", "Deltaforce"]
+     
+     Ranger2:{
+        text: 
+        "You decide to try to get into the Ranger Regiment. You make it through all 3 phases: Benning " + "<br><br>" +
+        "Phase, Mountain Phase, and Florida Phase. You pass it 1st of your class." + "<br><br>" 
+        , 
+        
+        // mod: [
+                //     []
+                // ],
+         choices: [
+                ["Continue", "CIA"]
+        ]
+     },
+     Greenberets2:{
+        text: "You decide to try to get into the Green Berets. You make it through all 6 phases: land "  + "<br><br>" +
+        "navigation, small unit tactics, MOS training, individual training, collective training, language and " + "<br><br>" +
+        "cultural training. You pass it 1st of your class" + "<br><br>" 
+        ,
+        
+        // mod: [
+                //     []
+                // ],
+         choices: [
+                ["Continue", "CIA"]
+        ]
+     },
+     Delta2:{
+        text: "You decide to try to get into the Delta Forces. You make it through all 3 phases: The First" + "<br><br>" +
+        "Phase, Stress Phase, and the \“Long Walk\”. You pass it 1st of your class."+ "<br><br>" 
+        ,
+        
+        // mod: [
+                //     []
+                // ],
+         choices: [
+                ["Continue", "CIA"]
+        ]
+     },
+     Delta2:{
+        text: "You decide to try to get into the Delta Forces. You make it through all 3 phases: The First" + "<br><br>" +
+        "Phase, Stress Phase, and the \“Long Walk\”. You pass it 1st of your class."+ "<br><br>" 
+        ,
+        // mod: [
+                //     []
+                // ],
+         CIA: [
+             text: "**CIA INTERVIEW ARCS***" + "<br><br>" +
+             "AFTER 6 MONTHS OF SPECIAL FORCES MISSIONS AND BEING A UNIT COMMANDER "+ "<br><br>" +
+             "YOU GET A LETTER FROM THE CIA SAYING YOU HAVE BEEN RECOMMENDED/REFERRED TO JOIN THE CIA\’S Operations Officers PROGRAM WHERE YOU WILL BE INTERVIEWED BY A CIA SPECIAL AGENT. ONE WEEK FROM TODAY"
+             + "<br><br>" +
+             "WHO COULD HAVE RECOMMENDED ME? WAS IT MY UNIT COMMANDER BROCK?"+ "<br><br>" +
+
+             "CALLS UNIT COMMANDER BROCK"+ "<br><br>" +
+             "UNIT COMMANDER BROCK : Excuse me, Corporal "+ "<br><br>" +
+             "YOU : Hey sir, I just got a letter from the CIA saying I have a interview with them in a week"+ "<br><br>" +
+             "UNIT COMMANDER BROCK : Congratulations, your hard work was noticed by the government" + "<br><br>" +
+             "YOU : Thank you sir but they said I was recommended by someone. Was that someone you?"+ "<br><br>" +
+             "UNIT COMMANDER BROCK : No I wouldn't wanna lose my best to the CIA now would I?"+ "<br><br>" +
+             "YOU :  Yes, I guess you\’re right about that sir."+ "<br><br>" +
+
+             "One week later "+ "<br><br>" +
+
+             "You show the security your military ID and are escorted to the bunker in a cold empty room with a large mirror on the side wall you noticed before entering there was a door to the right of the one you entered meaning someone is on the other side of that merro so it must be a one way mirror."+ "<br><br>" +
+
+             "THE INTERVIEWER WALKS IN: "+ "<br><br>" +
+             "Good morning () My name is Agent Jack Levreau I work for the CIA Recruiting Service. I see you have been recommended to us by someone ."+ "<br><br>" +
+             "You : Good morning , and may I ask who sir?"+ "<br><br>" +
+             "CIA AGENT :  Oh you don't know, don't worry you will find out soon enough"+ "<br><br>" +
+             "You: okay "+ "<br><br>" +
+             "The interview goes on for 3 hours in about everything asking about everything from where I was born to how many steps of stairs I has taken to come into the interview room But finally after 3 hours I told to wait after another 45 mins The agent walks in And Tells me "+ "<br><br>" +
+             "() Welcome to the CIA \"And ye shall know the truth and the truth shall make you free.\" (John 8:32) [the Unofficial motto of the CIA]."+ "<br><br>" +
+
+             "**AGENT PHOENIX REVEALS HIMSELF**"+ "<br><br>" +
+             "You walk out of your interview, hands are shaking with shortness of breath, you notice a familiar figure standing against a wall with a suit. You see him sticking his hand out to you waving."+ "<br><br>" +
+             "So, you made it. I always knew you could make it."+ "<br><br>" +
+             "Agent Phoenix : “You\’ve been recruited by the CIA as a counterintelligence agent. You will be working abroad mostly and by yourself.\" I\’m also here to teach you what you need to know about counterintelligence and espionage. This is gonna be a long one, but thankfully, with all of your experience it won\’t be.\”"+ "<br><br>" +
+             "You : “When do we start?”"+ "<br><br>" +
+             "Agent Phoenix : “Now.”"+ "<br><br>" +
+
+
+             "Agent Phoenix : “You know, I don\’t even know what you’ll be doing.\”"+ "<br><br>" +
+             "You : “But you\’re my mentor, you\’re saying that you don’t know anything?\”"+ "<br><br>" +
+             "Agent Phoenix : \“It\’s above my clearance. But, just know you’re the best candidate for it. No pressure though.\”"+ "<br><br>" +
+             "You : You think to yourself. What is your mission gonna be? Especially if Agent Phoenix doesn’t know anything about it."+ "<br><br>" +
+             "Agent Phoenix : “You\’re gonna be fine, and if you need any help, don’t mind reaching out to me.\”"+ "<br><br>" +
+             "You : \“Of course.\”"+ "<br><br>" +
+
+             "**AGENT PHOENIX DIES**"+ "<br><br>" +
+             "You receive a call late at night."+ "<br><br>" +
+             "*ring ring* *ring ring*"+ "<br><br>" +
+"Phone : “Agent Phoenix is KIA.”"+ "<br><br>" +
+"Your voice shudders and you swallow your saliva."+ "<br><br>" +
+"Phone : “He was found in his office. We believe it was poison and there was a note in there regarding your personal information.”"+ "<br><br>" +
+"You : “Am I needed at the office?”"+ "<br><br>" +
+"Phone : “No.”"+ "<br><br>" +
+"You : “Thank you for the notice.” "+ "<br><br>" +
+"You hangup"+ "<br><br>" +
+
+"You attend Agent Phoenix\’s funeral the following week."+ "<br><br>" +
+
+
+"**MEETING WITH 50th presidents: Dual presidency: Benden and Vrump**"+ "<br><br>" +
+"You get an invitation to the oval office to have a meeting with Benden and Vrump. Entering the oval office you see Benden pouring vodka into his red solo cup and Vrump adding ice to his own red solo cup."+ "<br><br>" +
+"You: The Honorables hello I received a highly secretive Message regarding an urgent meeting?"+ "<br><br>" +
+"The Honorables : Vrump:  Oh yes thank you for coming in such a short notice "+ "<br><br>" +
+"Ben: ahh Yes Finally we meet you, We have something very important for someone your caliber."+ "<br><br>" +
+" Vrump: We have decided to give you a very important Mission "+ "<br><br>" +
+ "** GIVEN THE MISSION**"+ "<br><br>" +
+"Benden and  Vrump: “The Mission: End World War III”"+ "<br><br>" +
+"Benden: Simple right? Just end world war III"+ "<br><br>" +
+"You: Excuse me ? But how can I Single handedly end World War III?"+ "<br><br>" +
+"Vrump: Well cutting off the head of the snake is always a great bet."+ "<br><br>" +
+"You: what do you mean by that sir"+ "<br><br>" +
+"Vrump: We brought you here Knowing what your capabilities are. "+ "<br><br>" +
+"Benden : You don't have to kill Valdimir Fast If you don't want to but ripping him of his respect and pride is enough to shatter the Russian federation. Ending World War III"+ "<br><br>" ,
+                ["Continue", "MEETING"]
+        ]
+     },
+     
+     MEETING:{
+        text: 
+       " **MEETING WITH 50th presidents: Dual presidency: Benden and Vrump**"+ "<br><br>" +
+"You get an invitation to the oval office to have a meeting with Benden and Vrump. Entering the oval office you see Benden pouring vodka into his red solo cup and Vrump adding ice to his own red solo cup."+ "<br><br>" +
+"You: The Honorables hello I received a highly secretive Message regarding an urgent meeting?"+ "<br><br>" +
+"The Honorables : Vrump:  Oh yes thank you for coming in such a short notice "+ "<br><br>" +
+"Ben: ahh Yes Finally we meet you, We have something very important for someone your caliber."+ "<br><br>" +
+" Vrump: We have decided to give you a very important Mission "+ "<br><br>" +
+"** GIVEN THE MISSION**"+ "<br><br>" +
+"Benden and  Vrump: “The Mission: End World War III”"+ "<br><br>" +
+"Benden: Simple right? Just end world war III"+ "<br><br>" +
+"You: Excuse me ? But how can I Single handedly end World War III?"+ "<br><br>" +
+"Vrump: Well cutting off the head of the snake is always a great bet."+ "<br><br>" +
+"You: what do you mean by that sir"+ "<br><br>" +
+"Vrump: We brought you here Knowing what your capabilities are. "+ "<br><br>" +
+"Benden : You don't have to kill Valdimir Fast If you don't want to but ripping him of his respect and pride is enough to shatter the Russian federation. Ending World War III"+ "<br><br>" 
+,
+        
+        // mod: [
+                //     []
+                // ],
+         choices: [
+                ["Assassinate: Vladimir Fast", "Assassinate"],["Refuse", "Refuse"],["Espionage: Vladimir Fast", "Assassinate"]
+        ]
+     },
+     Refuse:{
+        text: 
+      " You go back Home, Yeah it was a tough decision but that amount of stress and pressure isn't healthy you made the right choice but there is always a but when you get home you see a tall man in a dark overcoat standing over your dead wife and childers bodys he turns around with a piston in his hand you] see his face it\’s phenix your old mentor, "+ "<br><br>" +
+      "You: Why … w  WHy phoenix Why "+ "<br><br>" +
+      "Agent phoenix : it's just a business buddy that mission is top secret and no one can know about it."+ "<br><br>" +
+      "Agent phoenix lifts his pistol"+ "<br><br>" +
+      "You run and grab a fork on the table next to you and stab agent phoenix the piston is thrown across the room "+ "<br><br>" +
+      "**Bang** Bang****Bang**"+ "<br><br>" +
+      "Your body goes cold, you turn around and see a tall indian man with a beautiful mustache it it is sakhet  know ask agent 00 infamous for his accuracy "+ "<br><br>" +
+      "** you died**"+ "<br><br>" 
+        ,
+        
+        // mod: [
+                //     []
+                // ],
+         choices: [
+                ["LEAVE MISSION", "LEAVEMISSION"]
+        ]
+     },
+     Assassinate:{
+        text: "After analyzing  Vladimir Fast for 5 months You have narrowed down His most vulnerable locations perfect for killing  Vladimir Fast and ending World War III. The party is a loud and populated place. You know Vladimir Fast has a special VIP room at this party. On the other hand, the best time to attack is when he least expects it, making this Vladimir Fast weakest point and easy to kill, although filled with guards. You have the blueprints of the house and know where Vladimir Fast sleeps.
+        + "You Arrive at Vladimir Fast\’s house at 11:59 pm and finally see the Italianate palace worth up to  $1,400,000,000.00 known as  \"быстро Путина\" (\"Fast\’s Palace\") located next to the black sea in person after the several painstaking hours. You have spent several months planning out the different approaches here are a few. But first pick you Weapon:" 
+         ,
+         choices: [
+                ["climb the side of the house", "killed"],["walk in from main door","entered"],["enter through the window","entered"]
+        ]
+     },
+     entered:{
+        text:"There is no one here, just a sofa and a tv. the bottom floor is completely empty, maybe you should search around more." 
+        ,
+         choices: [
+                ["LEAVE MISSION","LEAVEMISSION"],["Enter Kitchen","Kitchen"],["GO UP STAIRS","Stairs"]
+        ]
+     },
+     Kitchen:{
+        text:"There is no one here, just a sofa and a tv. the bottom floor is completely empty, maybe you should search around more." 
+        ,
+         choices: [
+                ["LEAVE MISSION","LEAVEMISSION"],["Enter Kitchen","Kitchen"],["GO UP STAIRS","Stairs"]
+        ]
+     },
+
 };
 
 
