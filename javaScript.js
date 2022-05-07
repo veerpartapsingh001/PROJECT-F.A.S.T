@@ -336,14 +336,7 @@ var area = {
                 ["Continue", "CIA"]
         ]
      },
-     Delta2:{
-        text: "You decide to try to get into the Delta Forces. You make it through all 3 phases: The First" + "<br><br>" +
-        "Phase, Stress Phase, and the \“Long Walk\”. You pass it 1st of your class."+ "<br><br>" 
-        ,
-        // mod: [
-                //     []
-                // ],
-         CIA: [
+         CIA: {
              text: "**CIA INTERVIEW ARCS***" + "<br><br>" +
              "AFTER 6 MONTHS OF SPECIAL FORCES MISSIONS AND BEING A UNIT COMMANDER "+ "<br><br>" +
              "YOU GET A LETTER FROM THE CIA SAYING YOU HAVE BEEN RECOMMENDED/REFERRED TO JOIN THE CIA\’S Operations Officers PROGRAM WHERE YOU WILL BE INTERVIEWED BY A CIA SPECIAL AGENT. ONE WEEK FROM TODAY"
@@ -413,9 +406,15 @@ var area = {
 "You: what do you mean by that sir"+ "<br><br>" +
 "Vrump: We brought you here Knowing what your capabilities are. "+ "<br><br>" +
 "Benden : You don't have to kill Valdimir Fast If you don't want to but ripping him of his respect and pride is enough to shatter the Russian federation. Ending World War III"+ "<br><br>" ,
-                ["Continue", "MEETING"]
-        ]
-     },
+             
+
+        
+     
+
+         choices: [
+            ["Continue", "MEETING"]
+    ]
+} ,
      
      MEETING:{
         text: 
@@ -453,16 +452,14 @@ var area = {
       "Your body goes cold, you turn around and see a tall indian man with a beautiful mustache it it is sakhet  know ask agent 00 infamous for his accuracy "+ "<br><br>" +
       "** you died**"+ "<br><br>" 
         ,
-        
-        // mod: [
-                //     []
-                // ],
+
          choices: [
                 ["LEAVE MISSION", "LEAVEMISSION"]
         ]
      },
+    
      Assassinate:{
-        text: "After analyzing  Vladimir Fast for 5 months You have narrowed down His most vulnerable locations perfect for killing  Vladimir Fast and ending World War III. The party is a loud and populated place. You know Vladimir Fast has a special VIP room at this party. On the other hand, the best time to attack is when he least expects it, making this Vladimir Fast weakest point and easy to kill, although filled with guards. You have the blueprints of the house and know where Vladimir Fast sleeps.
+        text: "After analyzing  Vladimir Fast for 5 months You have narrowed down His most vulnerable locations perfect for killing  Vladimir Fast and ending World War III. The party is a loud and populated place. You know Vladimir Fast has a special VIP room at this party. On the other hand, the best time to attack is when he least expects it, making this Vladimir Fast weakest point and easy to kill, although filled with guards. You have the blueprints of the house and know where Vladimir Fast sleeps."
         + "You Arrive at Vladimir Fast\’s house at 11:59 pm and finally see the Italianate palace worth up to  $1,400,000,000.00 known as  \"быстро Путина\" (\"Fast\’s Palace\") located next to the black sea in person after the several painstaking hours. You have spent several months planning out the different approaches here are a few. But first pick you Weapon:" 
          ,
          choices: [
@@ -483,7 +480,96 @@ var area = {
                 ["LEAVE MISSION","LEAVEMISSION"],["Enter Kitchen","Kitchen"],["GO UP STAIRS","Stairs"]
         ]
      },
+     
+     Kitchen:{
+        text: "You enter the kitchen, the cold tiles and marble counter are all you see, everything is put away except for the peanut butter and the leftovers        ",
 
+         choices: [
+                ["LEAVE MISSION", "LEAVEMISSION"],["GO UP STAIRS","Stairs"]
+        ]
+     },
+     stairs:{
+        text: "As you go up the stairs you step on a premium sussy baka among us, a dog toy alerting Karma, Vladimir Fasts personal bodyguard, in the hallway around the stairs.",
+
+         choices: [
+                ["LEAVE MISSION", "LEAVEMISSION"],["GO UP STAIRS","KKarma"],["Distract by making sound","throw"]
+        ]
+     },
+     KKarma:{
+        text: "Karma pulls out his gun and tells you to stop moving. You are too scared  and frantically start chugging the peanut butter as it drips on the floor and into your eyes  you start choking on the chunky peanut butter and karma kills you.You Have decide to kill Karma but how "+<br></br>+
+         " you grab the peanutbutter off you face and shove it into his nose" +<br></br>+
+"you pick karma dead body off the floor and try hiding him but all you see is the empty narrow hall filled with doors you now have to gamble and hope to pick the right door"         ,
+
+         choices: [
+            ["DOOR 1", "Door1"],["DOOR 2", "Door2"],["DOOR 3", "Door3"],["DOOR 4", "Door4"]
+        ]
+     },
+     Throw:{
+        text: "You through The premium sussy baka among us dog toy across the hall and Karma run towards it give you time to hide/Run"+<br></br>+
+        "Before Karma Could Have the Time to come back and search for you you must run but all you see is the empty narrow hall filled with doors you now have to gamble and hope to pick the right door"
+        ,
+
+         choices: [
+                ["DOOR 1", "Door1"],["DOOR 2", "Door2"],["DOOR 3", "Door3"]
+        ]
+     },
+     Corner:{
+        text: "Karma pulls out his gun and tells you to stop moving. You are too scared  and frantically start chugging the peanut butter as it drips on the floor and into your eyes  you start choking on the chunky peanut butter and karma kills you. ",
+ 
+         choices: [
+                ["LEAVE MISSION", "LEAVEMISSION"]
+        ]
+     },
+
+     Door1:{
+        text: "THIS IS THE MAIN ROOM OF Fast\’s Palace you see VLADIMIR FAST sleeping in the right corner of his bed under his white silky sheets all that time planning out this mission it finally was going to plan and working time to finish what you started. ",
+
+         choices: [
+                ["LEAVE MISSION", "LEAVEMISSION"],["LEFT OVER PEANUT BUTTER", "Peanutbutter"],["Tickle him", "LEAVEMISSION"]
+        ]
+     },
+     Peanutbutter:{
+        text: "You slowly open the peanut butters lid, slide you hand inside then scoop out a hand full of chunky peanut butter then get on top of vladimir fast and stuff his mouth and nose with tons of peanut butter suffocation vladimir fast and putting an end to this war " +<br></br>+
+        "YOU GOT WHAT YOU CAME FOR NOW GO BACK TO THE USA GOOD JOB AGENT",
+
+         choices: [
+                ["MISSION DONE", "MISSIONDONE"]
+        ]
+     },
+     Door2:{
+        text: "You Tripped an alarm",
+
+         choices: [
+                ["Run", "run"],["Hide", "hidden"]
+        ]
+     },
+     run:{
+        text: "The Guards find you and kill you",
+
+         choices: [
+            ["LEAVE MISSION", "LEAVEMISSION"]
+        ]
+     },
+     hide:{
+        text: "The Guards find you and kill you",
+
+         choices: [
+            ["LEAVE MISSION", "LEAVEMISSION"]
+        ]
+     },
+     Door3:{
+        text: "YOU GOT KILLED AS YOU JUST WOKE UP THE GUARDS IN THE GUARDS ROOM        ",
+
+         choices: [
+                ["LEAVE MISSION", "LEAVEMISSION"]
+        ]
+     },
+     LEAVEMISSION:{
+        text: "YOU DIED",
+         choices: [
+                ["", ""]
+        ]
+     },
 };
 
 
