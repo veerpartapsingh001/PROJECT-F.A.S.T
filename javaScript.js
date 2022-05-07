@@ -573,6 +573,7 @@ var area = {
 };
 
 
+
 function constructerButtons(buttonText, picked) {
     let buttons = document.createElement("button");
     buttons.innerHTML = buttonText;
