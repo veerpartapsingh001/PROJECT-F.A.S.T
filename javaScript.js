@@ -121,7 +121,7 @@ var area = {
         // mod: [
         //     []
         // ],
-        choices: [
+        options: [
             ["RANGER", "Ranger"],["GREEN BERETS", "Greenberets"],["DELTA FORCE", "Deltaforce"]
         ]
     },
@@ -178,7 +178,7 @@ var area = {
         // mod: [
         //     []
         // ],
-        choices: [
+        options: [
             ["RANGER", "Ranger"],["GREEN BERETS", "Greenberets"],["DELTA FORCE", "Deltaforce"]
         ]
     },
@@ -235,7 +235,7 @@ var area = {
         // mod: [
         //     []
         // ],
-        choices: [
+        options: [
             ["RANGER", "Ranger"],["GREEN BERETS", "Greenberets"],["DELTA FORCE", "Deltaforce"]
         ]
     },
@@ -255,7 +255,7 @@ var area = {
 // mod: [
         //     []
         // ],
-        choices: [
+        options: [
             ["Continue", "Ranger2"]
         ]
     },
@@ -274,7 +274,7 @@ var area = {
 // mod: [
         //     []
         // ],
-        choices: [
+        options: [
             ["Continue", "Greenberets2"]
         ]
     },
@@ -293,7 +293,7 @@ var area = {
         // mod: [
                 //     []
                 // ],
-         choices: [
+                options: [
                 ["Continue", "Delta2"]
         ]
      },
@@ -307,7 +307,7 @@ var area = {
         // mod: [
                 //     []
                 // ],
-         choices: [
+                options: [
                 ["Continue", "CIA"]
         ]
      },
@@ -320,7 +320,7 @@ var area = {
         // mod: [
                 //     []
                 // ],
-         choices: [
+                options: [
                 ["Continue", "CIA"]
         ]
      },
@@ -332,7 +332,7 @@ var area = {
         // mod: [
                 //     []
                 // ],
-         choices: [
+                options: [
                 ["Continue", "CIA"]
         ]
      },
@@ -411,7 +411,7 @@ var area = {
         
      
 
-         choices: [
+options: [
             ["Continue", "MEETING"]
     ]
 } ,
@@ -437,8 +437,8 @@ var area = {
         // mod: [
                 //     []
                 // ],
-         choices: [
-                ["Assassinate: Vladimir Fast", "Assassinate"],["Refuse", "Refuse"],["Espionage: Vladimir Fast", "Assassinate"]
+                options: [
+                ["Assassinate: Vladimir Fast", "Assassinate"],["Refuse", "Refuse"],["Espionage: Vladimir Fast", "Espionage"]
         ]
      },
      Refuse:{
@@ -453,70 +453,175 @@ var area = {
       "** you died**"+ "<br><br>" 
         ,
 
-         choices: [
+        options: [
                 ["LEAVE MISSION", "LEAVEMISSION"]
         ]
      },
     
      Assassinate:{
         text: "After analyzing  Vladimir Fast for 5 months You have narrowed down His most vulnerable locations perfect for killing  Vladimir Fast and ending World War III. The party is a loud and populated place. You know Vladimir Fast has a special VIP room at this party. On the other hand, the best time to attack is when he least expects it, making this Vladimir Fast weakest point and easy to kill, although filled with guards. You have the blueprints of the house and know where Vladimir Fast sleeps."
-        + "You Arrive at Vladimir Fast\’s house at 11:59 pm and finally see the Italianate palace worth up to  $1,400,000,000.00 known as  \"быстро Путина\" (\"Fast\’s Palace\") located next to the black sea in person after the several painstaking hours. You have spent several months planning out the different approaches here are a few. But first pick you Weapon:" 
-         ,
-         choices: [
+        + "You Arrive at Vladimir Fast\’s house at 11:59 pm and finally see the Italianate palace worth up to  $1,400,000,000.00 known as  \"быстро Путина\" (\"Fast\’s Palace\") located next to the black sea in person after the several painstaking hours. You have spent several months planning out the different approaches here are a few. But first pick you Weapon:" ,
+         options: [
                 ["climb the side of the house", "killed"],["walk in from main door","entered"],["enter through the window","entered"]
         ]
      },
      entered:{
         text:"There is no one here, just a sofa and a tv. the bottom floor is completely empty, maybe you should search around more." 
         ,
-         choices: [
+        options: [
+                ["LEAVE MISSION","LEAVEMISSION"],["Enter Kitchen","Kitchen2"],["GO UP STAIRS","Stairs2"]
+        ]
+     },
+
+     Kitchen2:{
+        text: "You enter the kitchen, the cold tiles and marble counter are all you see, everything is put away except for the peanut butter and the leftovers",
+
+        options: [
+                ["LEAVE MISSION", "LEAVEMISSION"],["GO UP STAIRS","Stairs2"]
+        ]
+     },
+     Stairs2:{
+        text: "As you go up the stairs you step on a premium sussy baka among us, a dog toy alerting Karma, Vladimir Fasts personal bodyguard, in the hallway around the stairs.",
+
+         options: [
+                ["LEAVE MISSION", "LEAVEMISSION"],["GO UP STAIRS","KKarma2"],["Distract by making sound","throw2"]
+        ]
+     },
+     KKarma2:{
+        text: "Karma pulls out his gun and tells you to stop moving. You are too scared  and frantically start chugging the peanut butter as it drips on the floor and into your eyes  you start choking on the chunky peanut butter and karma kills you.You Have decide to kill Karma but how "+"<br></br>"+
+         " you grab the peanutbutter off you face and shove it into his nose" + "<br></br>" +
+"you pick karma dead body off the floor and try hiding him but all you see is the empty narrow hall filled with doors you now have to gamble and hope to pick the right door"         ,
+
+options: [
+            ["DOOR 1", "Door12"],["DOOR 2", "Door22"],["DOOR 3", "Door32"],["DOOR 4", "Door4"]
+        ]
+     },
+     Throw2:{
+        text: "You through The premium sussy baka among us dog toy across the hall and Karma run towards it give you time to hide/Run"+"<br></br>"+
+        "Before Karma Could Have the Time to come back and search for you you must run but all you see is the empty narrow hall filled with doors you now have to gamble and hope to pick the right door"
+        ,
+
+        options: [
+            ["DOOR 1", "Door12"],["DOOR 2", "Door22"],["DOOR 3", "Door32"],["DOOR 4", "Door42"]
+        ]
+     },
+     Corner:{
+        text: "Karma pulls out his gun and tells you to stop moving. You are too scared  and frantically start chugging the peanut butter as it drips on the floor and into your eyes  you start choking on the chunky peanut butter and karma kills you. ",
+ 
+        options: [
+                ["LEAVE MISSION", "LEAVEMISSION"]
+        ]
+     },
+
+     Door12:{
+        text: "THIS IS THE MAIN ROOM OF Fast\’s Palace you see VLADIMIR FAST sleeping in the right corner of his bed under his white silky sheets all that time planning out this mission it finally was going to plan and working time to finish what you started. ",
+
+        options: [
+                ["LEAVE MISSION", "LEAVEMISSION"],["LEFT OVER PEANUT BUTTER", "Peanutbutter2"],["Tickle him", "LEAVEMISSION"]
+        ]
+     },
+     Peanutbutter2:{
+        text: "You slowly open the peanut butters lid, slide you hand inside then scoop out a hand full of chunky peanut butter then get on top of vladimir fast and stuff his mouth and nose with tons of peanut butter suffocation vladimir fast and putting an end to this war " +"<br></br>"+
+        "YOU GOT WHAT YOU CAME FOR NOW GO BACK TO THE USA GOOD JOB AGENT",
+
+        options: [
+                ["MISSION DONE", false]
+        ]
+     },
+     Door22:{
+        text: "You Tripped an alarm",
+
+        options: [
+                ["Run", "run"],["Hide", "hidden"]
+        ]
+     },
+     run:{
+        text: "The Guards find you and kill you",
+
+        options: [
+            ["LEAVE MISSION", "LEAVEMISSION"]
+        ]
+     },
+     hide:{
+        text: "The Guards find you and kill you",
+
+        options: [
+            ["LEAVE MISSION", "LEAVEMISSION"]
+        ]
+     },
+     Door32:{
+        text: "YOU GOT KILLED AS YOU JUST WOKE UP THE GUARDS IN THE GUARDS ROOM        ",
+
+        options: [
+                ["LEAVE MISSION", "LEAVEMISSION"]
+        ]
+     },    
+
+
+     Espionage:{
+        text: "After analyzing  Vladimir Fast for 5 months You have narrowed down His most vulnerable locations perfect for killing  Vladimir Fast and ending World War III. The party is a loud and populated place. You know Vladimir Fast has a special VIP room at this party. On the other hand, the best time to attack is when he least expects it, making this Vladimir Fast weakest point and easy to kill, although filled with guards. You have the blueprints of the house and know where Vladimir Fast sleeps."
+        + "You Arrive at Vladimir Fast\’s house at 11:59 pm and finally see the Italianate palace worth up to  $1,400,000,000.00 known as  \"быстро Путина\" (\"Fast\’s Palace\") located next to the black sea in person after the several painstaking hours. You have spent several months planning out the different approaches here are a few. But first pick you Weapon:" ,
+         options: [
+                ["climb the side of the house", "killed"],["walk in from main door","entered"],["enter through the window","entered"]
+        ]
+     },
+     killed:{
+         text: "NGL your dead",
+         options: [
+            ["LEAVE MISSION", "LEAVEMISSION"]
+         ]
+     },
+     entered:{
+        text:"There is no one here, just a sofa and a tv. the bottom floor is completely empty, maybe you should search around more." 
+        ,
+        options: [
                 ["LEAVE MISSION","LEAVEMISSION"],["Enter Kitchen","Kitchen"],["GO UP STAIRS","Stairs"]
         ]
      },
      Kitchen:{
         text:"There is no one here, just a sofa and a tv. the bottom floor is completely empty, maybe you should search around more." 
         ,
-         choices: [
+        options: [
                 ["LEAVE MISSION","LEAVEMISSION"],["Enter Kitchen","Kitchen"],["GO UP STAIRS","Stairs"]
         ]
      },
      
      Kitchen:{
-        text: "You enter the kitchen, the cold tiles and marble counter are all you see, everything is put away except for the peanut butter and the leftovers        ",
+        text: "You enter the kitchen, the cold tiles and marble counter are all you see, everything is put away except for the peanut butter and the leftovers",
 
-         choices: [
+        options: [
                 ["LEAVE MISSION", "LEAVEMISSION"],["GO UP STAIRS","Stairs"]
         ]
      },
-     stairs:{
+     Stairs:{
         text: "As you go up the stairs you step on a premium sussy baka among us, a dog toy alerting Karma, Vladimir Fasts personal bodyguard, in the hallway around the stairs.",
 
-         choices: [
-                ["LEAVE MISSION", "LEAVEMISSION"],["GO UP STAIRS","KKarma"],["Distract by making sound","throw"]
+         options: [
+                ["LEAVE MISSION", "LEAVEMISSION"],["GO USP STAIR","KKarma"],["Distract by making sound","throw"]
         ]
      },
      KKarma:{
-        text: "Karma pulls out his gun and tells you to stop moving. You are too scared  and frantically start chugging the peanut butter as it drips on the floor and into your eyes  you start choking on the chunky peanut butter and karma kills you.You Have decide to kill Karma but how "+<br></br>+
-         " you grab the peanutbutter off you face and shove it into his nose" +<br></br>+
+        text: "Karma pulls out his gun and tells you to stop moving. You are too scared  and frantically start chugging the peanut butter as it drips on the floor and into your eyes  you start choking on the chunky peanut butter and karma kills you.You Have decide to kill Karma but how "+"<br></br>"+
+         " you grab the peanutbutter off you face and shove it into his nose" + "<br></br>" +
 "you pick karma dead body off the floor and try hiding him but all you see is the empty narrow hall filled with doors you now have to gamble and hope to pick the right door"         ,
 
-         choices: [
+options: [
             ["DOOR 1", "Door1"],["DOOR 2", "Door2"],["DOOR 3", "Door3"],["DOOR 4", "Door4"]
         ]
      },
      Throw:{
-        text: "You through The premium sussy baka among us dog toy across the hall and Karma run towards it give you time to hide/Run"+<br></br>+
+        text: "You through The premium sussy baka among us dog toy across the hall and Karma run towards it give you time to hide/Run"+"<br></br>"+
         "Before Karma Could Have the Time to come back and search for you you must run but all you see is the empty narrow hall filled with doors you now have to gamble and hope to pick the right door"
         ,
 
-         choices: [
+        options: [
                 ["DOOR 1", "Door1"],["DOOR 2", "Door2"],["DOOR 3", "Door3"]
         ]
      },
      Corner:{
         text: "Karma pulls out his gun and tells you to stop moving. You are too scared  and frantically start chugging the peanut butter as it drips on the floor and into your eyes  you start choking on the chunky peanut butter and karma kills you. ",
  
-         choices: [
+        options: [
                 ["LEAVE MISSION", "LEAVEMISSION"]
         ]
      },
@@ -524,50 +629,60 @@ var area = {
      Door1:{
         text: "THIS IS THE MAIN ROOM OF Fast\’s Palace you see VLADIMIR FAST sleeping in the right corner of his bed under his white silky sheets all that time planning out this mission it finally was going to plan and working time to finish what you started. ",
 
-         choices: [
-                ["LEAVE MISSION", "LEAVEMISSION"],["LEFT OVER PEANUT BUTTER", "Peanutbutter"],["Tickle him", "LEAVEMISSION"]
+        options: [
+                ["LEAVE MISSION", "LEAVEMISSION"],["LEFT OVER PEANUT BUTTER", "Peanutbutter"],["Read Dora the Exploras map loacted on the night stand", "READ"]
         ]
      },
      Peanutbutter:{
-        text: "You slowly open the peanut butters lid, slide you hand inside then scoop out a hand full of chunky peanut butter then get on top of vladimir fast and stuff his mouth and nose with tons of peanut butter suffocation vladimir fast and putting an end to this war " +<br></br>+
-        "YOU GOT WHAT YOU CAME FOR NOW GO BACK TO THE USA GOOD JOB AGENT",
+        text: "he wakes up and killes you",
 
-         choices: [
-                ["MISSION DONE", "MISSIONDONE"]
+        options: [
+            ["LEAVE MISSION", "LEAVEMISSION"]
+        ]
+     },
+     Read:{
+        text: "YOU FIND OUT VLADIMIR FAST THINKS VEER IS THE BEST STUDENT IN THE WORLD" + "<BR></BR>"+    
+            "YOU SHARE THIS INFORMATION WITH THE WHOLE WORLD"+ "<BR></BR>"+    
+            "WORLD WAR 3 IS STOPED",
+
+        options: [
+            ["MISSION DONE", false]
         ]
      },
      Door2:{
         text: "You Tripped an alarm",
 
-         choices: [
+        options: [
                 ["Run", "run"],["Hide", "hidden"]
         ]
      },
      run:{
         text: "The Guards find you and kill you",
 
-         choices: [
+        options: [
             ["LEAVE MISSION", "LEAVEMISSION"]
         ]
      },
      hide:{
         text: "The Guards find you and kill you",
 
-         choices: [
+        options: [
             ["LEAVE MISSION", "LEAVEMISSION"]
         ]
      },
      Door3:{
         text: "YOU GOT KILLED AS YOU JUST WOKE UP THE GUARDS IN THE GUARDS ROOM        ",
 
-         choices: [
+        options: [
                 ["LEAVE MISSION", "LEAVEMISSION"]
         ]
      },
+
+
      LEAVEMISSION:{
-        text: "YOU DIED",
-         choices: [
-                ["", ""]
+        text: "LOL YOU DIED",
+        options: [
+                ["Tuff", false]
         ]
      },
 };
@@ -582,6 +697,11 @@ function constructerButtons(buttonText, picked) {
 
     buttons.addEventListener("click", function() 
     {arrayChoices.push(picked); construct(); });
+
+    if(picked == false) {
+    buttons.style.display = "none"
+    }
+
 }
 
 
@@ -613,5 +733,16 @@ function construct() {
 
     for (let optioner of area[arrayChoices[arrayChoices.length - 1]].options) {
         constructerButtons(optioner[0], optioner[1]);
+
+        if (optioner[1] == false) {
+            let restartButton = document.createElement("button");
+            restartButton.innerHTML = "Restart";
+            restartButton.classList.add("restartGame");
+            choicesID.appendChild(restartButton);
+
+            restartButton.addEventListener("click", function() {
+                window.location.reload();
+            })
+        }
     }
 }
